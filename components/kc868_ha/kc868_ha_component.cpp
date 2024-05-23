@@ -75,7 +75,7 @@ namespace esphome {
 
     void KC868HaBinarySensor::setup() {
       ESP_LOGD(TAG, "KC868HaBinarySensor::setup");
-      this->publish_state(true);
+      this->publish_state(false);
     }
     void KC868HaBinarySensor::dump_config(){
       ESP_LOGCONFIG(TAG, "KC868HaBinarySensor::dump_config");
