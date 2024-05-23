@@ -1,6 +1,12 @@
 #include "kc868_ha_component.h"
 #include "math.h"
 
+#include "esphome.h"
+
+
+
+
+
 namespace esphome {
   namespace kc868_ha {
 
@@ -73,12 +79,13 @@ namespace esphome {
       ESP_LOGCONFIG(TAG, "KC868HaComponent::dump_config");
     }
 
-    void KC868HaBinarySensor::setup() {
+    void KC868HaBinarySensor:: {
       ESP_LOGD(TAG, "KC868HaBinarySensor::setup");
       this->publish_state(true);
     }
     void KC868HaBinarySensor::dump_config(){
       ESP_LOGCONFIG(TAG, "KC868HaBinarySensor::dump_config");
+      this->publish_state(true);
     }
 
     void KC868HaSwitch::setup() {
